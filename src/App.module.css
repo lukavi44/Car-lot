@@ -1,0 +1,9 @@
+.app-wrapper {
+  display: flex;
+}
+
+@media only screen and (max-width: 426px) {
+  .app-wrapper {
+    flex-direction: column-reverse;
+  }
+}

@@ -1,0 +1,35 @@
+.form {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.5rem;
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+    &:nth-child(even) {
+      background: rgb(236, 233, 233);
+    }
+    input {
+      padding: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .form {
+    height: 80vh;
+    gap: 0;
+    .form-group {
+      input {
+        padding: 10px;
+      }
+      button {
+        padding: 1.2rem;
+      }
+    }
+  }
+}

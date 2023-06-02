@@ -1,0 +1,19 @@
+.action-btn {
+  cursor: pointer;
+  color: #fff;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  background: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
+  border: none;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}

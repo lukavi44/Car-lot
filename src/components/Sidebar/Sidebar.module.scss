@@ -1,0 +1,77 @@
+.sidebar-container {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.nav-item {
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 0;
+  img {
+    height: 40px;
+    width: 40px;
+    &:hover {
+      scale: 1.2;
+    }
+  }
+}
+
+.logout-btn {
+  cursor: pointer;
+  height: 100%;
+  background: none;
+  color: black;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.create-car-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 426px) {
+  .sidebar-container {
+    z-index: 1;
+    flex-direction: row;
+    top: auto;
+    bottom: 0;
+    background: white;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    height: 5rem;
+    box-shadow: inset 0px 0px 8px 0px cadetblue;
+  }
+
+  img {
+    height: unset;
+    width: unset;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 33.33%;
+    padding: 0;
+    &:hover {
+      scale: unset;
+    }
+    &:active {
+      background: rgba(95, 158, 160, 0.479);
+    }
+  }
+}
